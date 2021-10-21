@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="x-apple-disable-message-reformatting">
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <title></title>
+    <!--[if mso]>
+    <style type="text/css">
+        table {border-collapse:collapse;border-spacing:0;margin:0;}
+        div, td {padding:0;}
+        div {margin:0 !important;}
+    </style>
+    <noscript>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    </noscript>
+    <![endif]-->
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
+    </style> -->
+    <style type="text/css">
+        /* @media screen and (max-width: 480px) {
+	display: block !important;
+	font-size: 14px !important;
+	max-height: none !important;
+} */
+
+        @media screen and (max-width: 460px) {
+
+            .head-desktop {
+                display: none !important;
+                visibility: hidden !important;
+                width: 0;
+                height: 0;
+                max-height: none !important;
+            }
+            .head-mobile {
+                display: block !important;
+                width: 100%;
+                max-width: 400px;
+            }
+            .two-col .img-detail {
+                max-width: 50% !important;
+            }
+            .two-col img {
+                max-width: 100% !important;
+            }
+            .column-product-price .caption-product-price {
+                text-align: end !important;
+            }
+            .column-product-price-nominal .caption-product-price-nominal {
+                text-align: end !important;
+            }
+        }
+
+        @media screen and (min-width: 461px) {
+
+            .resetImage {
+                max-height: none !important;
+                width: 100% !important;
+                max-width: 700px;
+            }
+            .head-desktop {
+                /* display: block !important; */
+                max-height: none !important;
+                width: 100% !important;
+                max-width: 700px;
+            }
+            .head-mobile {
+                display: none !important;
+                visibility: hidden !important;
+                width: 0;
+                height: 0;
+            }
+            .two-col .column {
+                max-width: 50% !important;
+            }
+            .two-col-invoice .column {
+                max-width: 30% !important;
+            }
+            .two-col .column-product-description {
+                max-width: 70% !important;
+            }
+            .two-col .column-product-description-total {
+                max-width: 30% !important;
+            }
+            .two-col .column-product-price {
+                max-width: 70% !important;
+            }
+            .two-col .column-product-price-nominal {
+                max-width: 30% !important;
+            }
+            .two-col .column .td_feature_title {
+                text-align: start !important;
+            }
+            .two-col .column .ptStyle {
+                text-align: left !important;
+            }
+            .two-col .column .socStyle {
+                text-align: right !important;
+            }
+            .two-col .column .emailStyle {
+                text-align: left !important;
+            }
+            .column-invoice {
+                max-width: 30% !important;
+            }
+            .column .product-sub-total {
+                text-align: end !important;
+                /* margin: -8px 0 0 58px !important; */
+                margin-left: 111px !important;
+            }
+            .column-product-price .caption-product-price {
+                text-align: end !important;
+                /* margin: -8px 0 0 58px !important; */
+                /* margin-left: 111px !important; */
+            }
+            .column-product-price-nominal .caption-product-price-nominal {
+                text-align: end !important;
+            }
+            .column-product-description .sub-product-description {
+                width: 300px !important;
+            }
+            .two-col .column .productStyle {
+                text-align: left !important;
+            }
+            .caption{
+                padding:10px 32px !important;
+            }
+            .title-top {
+                padding: 32px 25px 16px 25px !important;
+            }
+            .title-box {
+                padding: 0px 34px !important;
+            }
+            .min-transaksi {
+                padding: 5px;
+            }            
+        }
+
+        @media only screen and (min-width:480px) {
+            .td_feature_image {
+                text-align: center;
+                line-height: 53px;
+                padding-top: 10px;
+            }
+            .td_feature_title {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 21.29px;
+                text-align: center;
+                vertical-align: top;
+                font-weight: 600;
+                color: #808285;
+                padding-bottom: 8px;
+                padding-top: 8px;
+                font-family: 'Helvetica Neue';
+            }
+            .td_feature_title_detail_invoice {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 21.29px;
+                text-align: center;
+                vertical-align: top;
+                font-weight: 600;
+                color: #808285;
+                font-family: 'Helvetica Neue';
+            }
+            .td_feature_description {
+                vertical-align: top;
+                text-align: center;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 18.25px;
+                font-weight: 400;
+                color: #808285;
+                font-family: 'Helvetica Neue';
+            }
+            .td_product_description_total {
+                font-style: normal;
+                margin: 4px;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 21.29px;
+                text-align: end;
+                vertical-align: top;
+                font-weight: 600;
+                color: #808285;
+                font-family: 'Helvetica Neue';
+            }
+            .td_product_description_total_nominal {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 21.29px;
+                text-align: end;
+                vertical-align: top;
+                font-weight: 600;
+                color: #808285;
+                font-family: 'Helvetica Neue';
+            }
+            .td_product_description_total_pembayaran {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 21.29px;
+                text-align: end;
+                vertical-align: top;
+                font-weight: 600;
+                color: #808285;
+                font-family: 'Helvetica Neue';
+            }
+            .td_product_description_total_pembayaran_nominal {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 27.38px;
+                text-align: end;
+                vertical-align: top;
+                font-weight: 600;
+                color: #ED9121;
+                font-family: 'Helvetica Neue';
+
+            }
+            .td_image_group {
+                padding: 10px 30px;
+            }
+            .td_invoice {
+                padding: 10px 10px;
+            }
+            .td_invoice_feature_title {
+                font-style: normal;
+                font-size: 14px;
+                line-height: 21.29px;
+                text-align: center;
+                vertical-align: top;
+                font-weight: 600;
+                color: #808285;
+                padding-bottom: 8px;
+                padding-top: 8px;
+                font-family: 'Helvetica Neue';
+            }
+        }
+    </style>
+</head>
+
+<body style="margin:0;padding:0;word-spacing:normal;background-color:#F6F6F6; display:block; margin-left:auto;margin-right:auto; max-width: 700px;">
+    <div role="article" aria-roledescription="email" lang="en"
+        style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:#F6F6F6;">
+        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+            <tr>
+                <td align="center">
+                    <!--[if mso]>
+                        <table role="presentation" align="center" style="width:660px;">
+                        <tr>
+                        <td style="padding:20px 0;">
+                        <![endif]-->
+                    <div class="mj-column-per-100 outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                            <tr style="background-color: #43568E;">
+                                <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                    <img style="object-fit: cover; height: 30px;"
+                                        src="https://storage.googleapis.com/bri-embrio-dev_cloudbuild/email-image/logo-brinvestyuk.png"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                    <img style="object-fit: cover; height:220px;"
+                                        src="https://storage.googleapis.com/bri-embrio-dev_cloudbuild/email-image/welcome.png"
+                                    >
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="section-top" style="margin:0px auto; max-width: 652px;">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                            <tr>
+                                <td style="direction:ltr;font-size:0px;text-align:center;">
+                                    <div class="mj-column-per-100 outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                                            <tr>
+                                                <td align="center" class="title-top" style="font-size:0px; padding:32px 16px 16px 16px; word-break:break-word;">
+                                                    <div style="font-family:'Helvetica Neue';font-size:24px;text-align:center;color:#43568E; line-height:30.42px;">
+                                                        <b>Hi {{ .name }}</b>,
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" class="title-box"
+                                                style="font-size:0px;padding:0px 16px;word-break:break-word;">
+                                                    <div 
+                                                        style="font-family:'Helvetica Neue';font-size:14px;line-height:18px;text-align:center;color:#43568E;width:70%;">
+                                                        Selamat datang di <i>Store Point of Sales</i>, berikut adalah kode verifikasi untuk menyelesaikan pendaftaran kamu
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" style="font-size:0px;padding:32px 0px; word-break:break-word;">
+                                                  <a href="{{ .link }}">
+                                                      <button
+                                                          style="cursor: pointer; text-decoration: none; border: none; font-family:'Helvetica Neue'; width: 328px; height: 46px; border-radius: 10px; font-size:16px; font-weight: 700; line-height:24.34px; text-align:center;color:#ffffff; background-color: #43568E;">
+                                                          Verifikasi
+                                                      </button>
+                                                  </a>
+                                              </td>
+                                          </tr>
+                                            <tr>
+                                                <td align="center" style="padding: 8px 8px;color: #43568E;line-height: 20px;border-collapse: collapse;">
+                                                    <font size="3" face="Open-sans, sans-serif" color="#FFFFFF">
+                                                        <span style="color:#FFFFFF; height: 43px; width: 100px;">
+                                                            <p style="color: #FFFFFF;line-height: 20px; text-align: center;">
+                                                                <span style="font-family: 'Titillium Web', sans-serif; border-radius: 8px; color: #FFFFFF; font-weight: bold; background-color: #43568E; text-align: center; line-height: 27px; letter-spacing: 0.5em; font-size: 20px; padding: 8px 16px 8px 25px; margin: 0 0.2em;">
+                                                                    {{ .otp }}
+                                                                </span>
+                                                            </p>
+                                                        </span>
+                                                    </font>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" class="confirmation-box"
+                                              style="font-size:0px;padding:10px 25px 16px 25px;word-break:break-word; margin: 32px 16px; ">
+                                                  <div
+                                                      style="font-family:'Helvetica Neue';font-size:12px;line-height:18px;text-align:center;color:#43568E;">
+                                                      Atau kamu bisa klik tombol dibawah ini
+                                                  </div>
+                                              </td>
+                                          </tr>
+                                            <tr>
+                                                <td align="center" class="confirmation-box"
+                                                style="font-size:0px;padding:10px 25px 16px 25px;word-break:break-word; margin: 32px 16px; ">
+                                                    <div
+                                                        style="font-family:'Helvetica Neue';font-size:12px;line-height:18px;text-align:center;color:#43568E;">
+                                                        Abaikan email ini jika kamu tidak pernah melakukan pendaftaran pada BRInvestYuk!. <br /> Silahkan hubungi <b><a href="mailto:help@spos.id">help@spos.id</a></b> untuk bantuan lebih lanjut.
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                     </div>
+                    <div class="section section-voucher" style="background: white; margin: 0px auto; max-width: 700px;">
+                        <div style="margin:0px auto;max-width:700px;">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                <tr>
+                                    <td style="direction:ltr;font-size:0px;text-align:center;">
+                                        <div class="mj-column-per-100 outlook-group-fix"
+                                            style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                style="vertical-align:top;" width="100%">
+                                                <tr style="background-color: #43568E;">
+                                                    <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                                        <div
+                                                            style="font-family:'Helvetica Neue';font-size:14px;line-height:21.29px; text-align:center;color:#FFFFFF;">
+                                                            <a style="text-decoration: none; color: #FFFFFF;">www.spos.id</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
