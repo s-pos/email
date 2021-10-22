@@ -64,6 +64,5 @@ func (d *DataEmail) SendEmail() error {
 	)
 
 	err = dialer.DialAndSend(mailer)
-	log.Print(err)
 	return err
 }

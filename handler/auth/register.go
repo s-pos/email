@@ -47,7 +47,7 @@ func (r *registerHandler) Handler(msg amqp.Delivery) {
 	dataEmail := &utils.DataEmail{
 		To:            req.Email,
 		Subject:       "Selamat datang di SPOS",
-		TemplateEmail: "templates/registration.html",
+		TemplateEmail: "templates/register.html",
 		Data:          data,
 	}
 

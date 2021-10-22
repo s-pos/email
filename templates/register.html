@@ -270,21 +270,15 @@
                         <![endif]-->
                     <div class="mj-column-per-100 outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
-                            <tr style="background-color: #43568E;">
+                            <tr style="background-color: #1956B4;">
                                 <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                 </td>
                             </tr>
                             <tr>
                                 <td align="right" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                    <img style="object-fit: cover; height: 30px;"
-                                        src="https://storage.googleapis.com/bri-embrio-dev_cloudbuild/email-image/logo-brinvestyuk.png"
-                                    >
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                    <img style="object-fit: cover; height:220px;"
-                                        src="https://storage.googleapis.com/bri-embrio-dev_cloudbuild/email-image/welcome.png"
+                                    <img 
+                                        style="object-fit: cover; height: 50px;"
+                                        src="https://storage.googleapis.com/bri-embrio-dev_cloudbuild/email-image/spos_logo.png"
                                     >
                                 </td>
                             </tr>
@@ -298,7 +292,7 @@
                                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                                             <tr>
                                                 <td align="center" class="title-top" style="font-size:0px; padding:32px 16px 16px 16px; word-break:break-word;">
-                                                    <div style="font-family:'Helvetica Neue';font-size:24px;text-align:center;color:#43568E; line-height:30.42px;">
+                                                    <div style="font-family:'Helvetica Neue';font-size:24px;text-align:center;color:#1956B4; line-height:30.42px;">
                                                         <b>Hi {{ .name }}</b>,
                                                     </div>
                                                 </td>
@@ -307,27 +301,17 @@
                                                 <td align="center" class="title-box"
                                                 style="font-size:0px;padding:0px 16px;word-break:break-word;">
                                                     <div 
-                                                        style="font-family:'Helvetica Neue';font-size:14px;line-height:18px;text-align:center;color:#43568E;width:70%;">
+                                                        style="font-family:'Helvetica Neue';font-size:14px;line-height:18px;text-align:center;color:#1956B4;width:70%;">
                                                         Selamat datang di <i>Store Point of Sales</i>, berikut adalah kode verifikasi untuk menyelesaikan pendaftaran kamu
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                              <td align="center" style="font-size:0px;padding:32px 0px; word-break:break-word;">
-                                                  <a href="{{ .link }}">
-                                                      <button
-                                                          style="cursor: pointer; text-decoration: none; border: none; font-family:'Helvetica Neue'; width: 328px; height: 46px; border-radius: 10px; font-size:16px; font-weight: 700; line-height:24.34px; text-align:center;color:#ffffff; background-color: #43568E;">
-                                                          Verifikasi
-                                                      </button>
-                                                  </a>
-                                              </td>
-                                          </tr>
-                                            <tr>
-                                                <td align="center" style="padding: 8px 8px;color: #43568E;line-height: 20px;border-collapse: collapse;">
+                                                <td align="center" style="padding: 8px 8px;color: #1956B4;line-height: 20px;border-collapse: collapse;">
                                                     <font size="3" face="Open-sans, sans-serif" color="#FFFFFF">
                                                         <span style="color:#FFFFFF; height: 43px; width: 100px;">
                                                             <p style="color: #FFFFFF;line-height: 20px; text-align: center;">
-                                                                <span style="font-family: 'Titillium Web', sans-serif; border-radius: 8px; color: #FFFFFF; font-weight: bold; background-color: #43568E; text-align: center; line-height: 27px; letter-spacing: 0.5em; font-size: 20px; padding: 8px 16px 8px 25px; margin: 0 0.2em;">
+                                                                <span style="font-family: 'Titillium Web', sans-serif; border-radius: 8px; color: #FFFFFF; font-weight: bold; background-color: #1956B4; text-align: center; line-height: 27px; letter-spacing: 0.5em; font-size: 20px; padding: 8px 16px 8px 25px; margin: 0 0.2em;">
                                                                     {{ .otp }}
                                                                 </span>
                                                             </p>
@@ -337,18 +321,31 @@
                                             </tr>
                                             <tr>
                                               <td align="center" class="confirmation-box"
-                                              style="font-size:0px;padding:10px 25px 16px 25px;word-break:break-word; margin: 32px 16px; ">
+                                              style="font-size:0px;padding:20px 25px 0px 25px;word-break:break-word; margin: 32px 16px;">
                                                   <div
-                                                      style="font-family:'Helvetica Neue';font-size:12px;line-height:18px;text-align:center;color:#43568E;">
+                                                      style="font-family:'Helvetica Neue';font-size:12px;line-height:18px;text-align:center;color:#1956B4;">
                                                       Atau kamu bisa klik tombol dibawah ini
                                                   </div>
                                               </td>
-                                          </tr>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="font-size:0px;padding:20px 0px;">
+                                                    <a href="{{ .link }}">
+                                                        <button
+                                                            style="cursor:pointer;border: none; font-family:'Helvetica Neue'; width: 328px; height: 46px; border-radius: 10px; font-size:16px; font-weight: 700; line-height:24.34px; text-align:center;color:#ffffff; background-color: #1956B4;"
+                                                            onmouseover="this.style.backgroundColor='#334374'"
+                                                            onmouseout="this.style.backgroundColor='#1956B4'"
+                                                            >
+                                                            Verifikasi
+                                                        </button>
+                                                    </a>
+                                                </td>
+                                            </tr>
                                             <tr>
                                                 <td align="center" class="confirmation-box"
                                                 style="font-size:0px;padding:10px 25px 16px 25px;word-break:break-word; margin: 32px 16px; ">
                                                     <div
-                                                        style="font-family:'Helvetica Neue';font-size:12px;line-height:18px;text-align:center;color:#43568E;">
+                                                        style="font-family:'Helvetica Neue';font-size:12px;line-height:18px;text-align:center;color:#1956B4;">
                                                         Abaikan email ini jika kamu tidak pernah melakukan pendaftaran pada BRInvestYuk!. <br /> Silahkan hubungi <b><a href="mailto:help@spos.id">help@spos.id</a></b> untuk bantuan lebih lanjut.
                                                     </div>
                                                 </td>
@@ -368,7 +365,7 @@
                                             style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                                             <table border="0" cellpadding="0" cellspacing="0" role="presentation"
                                                 style="vertical-align:top;" width="100%">
-                                                <tr style="background-color: #43568E;">
+                                                <tr style="background-color: #1956B4;">
                                                     <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                         <div
                                                             style="font-family:'Helvetica Neue';font-size:14px;line-height:21.29px; text-align:center;color:#FFFFFF;">
