@@ -21,6 +21,8 @@ COPY --from=builder /go/bin/email /go/bin/email
 
 COPY --from=builder /go/src/embrio/bri-gcs.json /go/src/embrio
 
+COPY templates templates
+
 RUN apk add --no-cache tzdata
 
 ENTRYPOINT ["/go/bin/email"]
